@@ -1,0 +1,20 @@
+C:\Users\Usuario\Desktop\Sem 1-23\Actualización Tecnologica\Proyecto\Proyecto Hotel\Proyecto Hotel\bin\Debug\Proyecto Hotel.exe.config
+C:\Users\Usuario\Desktop\Sem 1-23\Actualización Tecnologica\Proyecto\Proyecto Hotel\Proyecto Hotel\bin\Debug\Proyecto Hotel.exe
+C:\Users\Usuario\Desktop\Sem 1-23\Actualización Tecnologica\Proyecto\Proyecto Hotel\Proyecto Hotel\bin\Debug\Proyecto Hotel.pdb
+C:\Users\Usuario\Desktop\Sem 1-23\Actualización Tecnologica\Proyecto\Proyecto Hotel\Proyecto Hotel\obj\Debug\Proyecto Hotel.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Sem 1-23\Actualización Tecnologica\Proyecto\Proyecto Hotel\Proyecto Hotel\obj\Debug\Proyecto Hotel.csproj.SuggestedBindingRedirects.cache
+C:\Users\Usuario\Desktop\Sem 1-23\Actualización Tecnologica\Proyecto\Proyecto Hotel\Proyecto Hotel\obj\Debug\Proyecto_Hotel.Properties.Resources.resources
+C:\Users\Usuario\Desktop\Sem 1-23\Actualización Tecnologica\Proyecto\Proyecto Hotel\Proyecto Hotel\obj\Debug\Proyecto Hotel.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\Sem 1-23\Actualización Tecnologica\Proyecto\Proyecto Hotel\Proyecto Hotel\obj\Debug\Proyecto Hotel.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Sem 1-23\Actualización Tecnologica\Proyecto\Proyecto Hotel\Proyecto Hotel\obj\Debug\Proyecto Hotel.exe
+C:\Users\Usuario\Desktop\Sem 1-23\Actualización Tecnologica\Proyecto\Proyecto Hotel\Proyecto Hotel\obj\Debug\Proyecto Hotel.pdb
+C:\Users\Usuario\Desktop\Sem 1-23\Actualización Tecnologica\Proyecto\Proyecto Hotel\Proyecto Hotel\bin\Debug\EntityFramework.dll
+C:\Users\Usuario\Desktop\Sem 1-23\Actualización Tecnologica\Proyecto\Proyecto Hotel\Proyecto Hotel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Usuario\Desktop\Sem 1-23\Actualización Tecnologica\Proyecto\Proyecto Hotel\Proyecto Hotel\bin\Debug\EntityFramework.xml
+C:\Users\Usuario\Desktop\Sem 1-23\Actualización Tecnologica\Proyecto\Proyecto Hotel\Proyecto Hotel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Usuario\Desktop\Sem 1-23\Actualización Tecnologica\Proyecto\Proyecto Hotel\Proyecto Hotel\obj\Debug\Proyecto Hotel.csproj.CopyComplete
+C:\Users\Usuario\Desktop\Sem 1-23\Actualización Tecnologica\Proyecto\Proyecto Hotel\Proyecto Hotel\obj\Debug\Proyecto_Hotel.FrmLogin.resources
+C:\Users\Usuario\Desktop\Sem 1-23\Actualización Tecnologica\Proyecto\Proyecto Hotel\Proyecto Hotel\obj\Debug\Proyecto_Hotel.Vistas.FrmMenuPrincipal.resources
+C:\Users\Usuario\Desktop\Sem 1-23\Actualización Tecnologica\Proyecto\Proyecto Hotel\Proyecto Hotel\obj\Debug\Proyecto_Hotel.Vistas.FrmGestionarUsuario.resources
+C:\Users\Usuario\Desktop\Sem 1-23\Actualización Tecnologica\Proyecto\Proyecto Hotel\Proyecto Hotel\obj\Debug\Proyecto_Hotel.Vistas.FrmGestionarCliente.resources
+C:\Users\Usuario\Desktop\Sem 1-23\Actualización Tecnologica\Proyecto\Proyecto Hotel\Proyecto Hotel\obj\Debug\Proyecto_Hotel.Vistas.FrmGestionarHabitacion.resources
