@@ -86,6 +86,7 @@
             this.rEPORTESToolStripMenuItem.Size = new System.Drawing.Size(91, 64);
             this.rEPORTESToolStripMenuItem.Text = "REPORTES";
             this.rEPORTESToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.rEPORTESToolStripMenuItem.Click += new System.EventHandler(this.rEPORTESToolStripMenuItem_Click);
             // 
             // sALIRToolStripMenuItem
             // 
@@ -94,6 +95,7 @@
             this.sALIRToolStripMenuItem.Size = new System.Drawing.Size(61, 64);
             this.sALIRToolStripMenuItem.Text = "SALIR";
             this.sALIRToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.sALIRToolStripMenuItem.Click += new System.EventHandler(this.sALIRToolStripMenuItem_Click);
             // 
             // FrmMenuPrincipal
             // 

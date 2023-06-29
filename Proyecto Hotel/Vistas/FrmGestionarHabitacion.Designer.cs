@@ -34,24 +34,25 @@
             System.Windows.Forms.Label precioHabitacionLabel;
             System.Windows.Forms.Label tipoHabitacionLabel;
             this.groupBoxHabitacion = new System.Windows.Forms.GroupBox();
-            this.habitacionDataGridView1 = new System.Windows.Forms.DataGridView();
+            this.estadoHabitacionCheckBox = new System.Windows.Forms.CheckBox();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.numHabitacionTextBox = new System.Windows.Forms.TextBox();
             this.precioHabitacionTextBox = new System.Windows.Forms.TextBox();
             this.tipoHabitacionComboBox = new System.Windows.Forms.ComboBox();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
+            this.habitacionDataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.lblBuscar = new System.Windows.Forms.Label();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewCheckBoxColumn2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.habitacionBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.estadoHabitacionCheckBox = new System.Windows.Forms.CheckBox();
             estadoHabitacionLabel = new System.Windows.Forms.Label();
             numHabitacionLabel = new System.Windows.Forms.Label();
             precioHabitacionLabel = new System.Windows.Forms.Label();
@@ -60,6 +61,42 @@
             ((System.ComponentModel.ISupportInitialize)(this.habitacionDataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.habitacionBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // estadoHabitacionLabel
+            // 
+            estadoHabitacionLabel.AutoSize = true;
+            estadoHabitacionLabel.Location = new System.Drawing.Point(29, 96);
+            estadoHabitacionLabel.Name = "estadoHabitacionLabel";
+            estadoHabitacionLabel.Size = new System.Drawing.Size(121, 16);
+            estadoHabitacionLabel.TabIndex = 0;
+            estadoHabitacionLabel.Text = "Estado Habitacion:";
+            // 
+            // numHabitacionLabel
+            // 
+            numHabitacionLabel.AutoSize = true;
+            numHabitacionLabel.Location = new System.Drawing.Point(29, 51);
+            numHabitacionLabel.Name = "numHabitacionLabel";
+            numHabitacionLabel.Size = new System.Drawing.Size(106, 16);
+            numHabitacionLabel.TabIndex = 2;
+            numHabitacionLabel.Text = "Num Habitacion:";
+            // 
+            // precioHabitacionLabel
+            // 
+            precioHabitacionLabel.AutoSize = true;
+            precioHabitacionLabel.Location = new System.Drawing.Point(33, 180);
+            precioHabitacionLabel.Name = "precioHabitacionLabel";
+            precioHabitacionLabel.Size = new System.Drawing.Size(117, 16);
+            precioHabitacionLabel.TabIndex = 4;
+            precioHabitacionLabel.Text = "Precio Habitacion:";
+            // 
+            // tipoHabitacionLabel
+            // 
+            tipoHabitacionLabel.AutoSize = true;
+            tipoHabitacionLabel.Location = new System.Drawing.Point(29, 138);
+            tipoHabitacionLabel.Name = "tipoHabitacionLabel";
+            tipoHabitacionLabel.Size = new System.Drawing.Size(106, 16);
+            tipoHabitacionLabel.TabIndex = 6;
+            tipoHabitacionLabel.Text = "Tipo Habitacion:";
             // 
             // groupBoxHabitacion
             // 
@@ -80,87 +117,15 @@
             this.groupBoxHabitacion.TabStop = false;
             this.groupBoxHabitacion.Text = "HABIATCION";
             // 
-            // habitacionDataGridView1
+            // estadoHabitacionCheckBox
             // 
-            this.habitacionDataGridView1.AutoGenerateColumns = false;
-            this.habitacionDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.habitacionDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewCheckBoxColumn2});
-            this.habitacionDataGridView1.DataSource = this.habitacionBindingSource;
-            this.habitacionDataGridView1.Location = new System.Drawing.Point(380, 70);
-            this.habitacionDataGridView1.Name = "habitacionDataGridView1";
-            this.habitacionDataGridView1.RowHeadersWidth = 51;
-            this.habitacionDataGridView1.RowTemplate.Height = 24;
-            this.habitacionDataGridView1.Size = new System.Drawing.Size(718, 369);
-            this.habitacionDataGridView1.TabIndex = 2;
-            // 
-            // estadoHabitacionLabel
-            // 
-            estadoHabitacionLabel.AutoSize = true;
-            estadoHabitacionLabel.Location = new System.Drawing.Point(29, 96);
-            estadoHabitacionLabel.Name = "estadoHabitacionLabel";
-            estadoHabitacionLabel.Size = new System.Drawing.Size(121, 16);
-            estadoHabitacionLabel.TabIndex = 0;
-            estadoHabitacionLabel.Text = "Estado Habitacion:";
-            // 
-            // numHabitacionLabel
-            // 
-            numHabitacionLabel.AutoSize = true;
-            numHabitacionLabel.Location = new System.Drawing.Point(29, 51);
-            numHabitacionLabel.Name = "numHabitacionLabel";
-            numHabitacionLabel.Size = new System.Drawing.Size(106, 16);
-            numHabitacionLabel.TabIndex = 2;
-            numHabitacionLabel.Text = "Num Habitacion:";
-            // 
-            // numHabitacionTextBox
-            // 
-            this.numHabitacionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.habitacionBindingSource, "NumHabitacion", true));
-            this.numHabitacionTextBox.Location = new System.Drawing.Point(156, 48);
-            this.numHabitacionTextBox.Name = "numHabitacionTextBox";
-            this.numHabitacionTextBox.Size = new System.Drawing.Size(121, 22);
-            this.numHabitacionTextBox.TabIndex = 3;
-            // 
-            // precioHabitacionLabel
-            // 
-            precioHabitacionLabel.AutoSize = true;
-            precioHabitacionLabel.Location = new System.Drawing.Point(33, 180);
-            precioHabitacionLabel.Name = "precioHabitacionLabel";
-            precioHabitacionLabel.Size = new System.Drawing.Size(117, 16);
-            precioHabitacionLabel.TabIndex = 4;
-            precioHabitacionLabel.Text = "Precio Habitacion:";
-            // 
-            // precioHabitacionTextBox
-            // 
-            this.precioHabitacionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.habitacionBindingSource, "PrecioHabitacion", true));
-            this.precioHabitacionTextBox.Location = new System.Drawing.Point(160, 177);
-            this.precioHabitacionTextBox.Name = "precioHabitacionTextBox";
-            this.precioHabitacionTextBox.Size = new System.Drawing.Size(121, 22);
-            this.precioHabitacionTextBox.TabIndex = 5;
-            // 
-            // tipoHabitacionLabel
-            // 
-            tipoHabitacionLabel.AutoSize = true;
-            tipoHabitacionLabel.Location = new System.Drawing.Point(29, 138);
-            tipoHabitacionLabel.Name = "tipoHabitacionLabel";
-            tipoHabitacionLabel.Size = new System.Drawing.Size(106, 16);
-            tipoHabitacionLabel.TabIndex = 6;
-            tipoHabitacionLabel.Text = "Tipo Habitacion:";
-            // 
-            // tipoHabitacionComboBox
-            // 
-            this.tipoHabitacionComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.habitacionBindingSource, "TipoHabitacion", true));
-            this.tipoHabitacionComboBox.FormattingEnabled = true;
-            this.tipoHabitacionComboBox.Items.AddRange(new object[] {
-            "Individual",
-            "Doble",
-            "Familiar"});
-            this.tipoHabitacionComboBox.Location = new System.Drawing.Point(156, 135);
-            this.tipoHabitacionComboBox.Name = "tipoHabitacionComboBox";
-            this.tipoHabitacionComboBox.Size = new System.Drawing.Size(121, 24);
-            this.tipoHabitacionComboBox.TabIndex = 7;
+            this.estadoHabitacionCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.habitacionBindingSource, "EstadoHabitacion", true));
+            this.estadoHabitacionCheckBox.Location = new System.Drawing.Point(165, 96);
+            this.estadoHabitacionCheckBox.Name = "estadoHabitacionCheckBox";
+            this.estadoHabitacionCheckBox.Size = new System.Drawing.Size(104, 24);
+            this.estadoHabitacionCheckBox.TabIndex = 16;
+            this.estadoHabitacionCheckBox.Text = "Ocupado";
+            this.estadoHabitacionCheckBox.UseVisualStyleBackColor = true;
             // 
             // btnCancelar
             // 
@@ -183,6 +148,52 @@
             this.btnGuardar.Text = "GUARDAR";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // numHabitacionTextBox
+            // 
+            this.numHabitacionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.habitacionBindingSource, "NumHabitacion", true));
+            this.numHabitacionTextBox.Location = new System.Drawing.Point(156, 48);
+            this.numHabitacionTextBox.Name = "numHabitacionTextBox";
+            this.numHabitacionTextBox.Size = new System.Drawing.Size(121, 22);
+            this.numHabitacionTextBox.TabIndex = 3;
+            // 
+            // precioHabitacionTextBox
+            // 
+            this.precioHabitacionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.habitacionBindingSource, "PrecioHabitacion", true));
+            this.precioHabitacionTextBox.Location = new System.Drawing.Point(160, 177);
+            this.precioHabitacionTextBox.Name = "precioHabitacionTextBox";
+            this.precioHabitacionTextBox.Size = new System.Drawing.Size(121, 22);
+            this.precioHabitacionTextBox.TabIndex = 5;
+            // 
+            // tipoHabitacionComboBox
+            // 
+            this.tipoHabitacionComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.habitacionBindingSource, "TipoHabitacion", true));
+            this.tipoHabitacionComboBox.FormattingEnabled = true;
+            this.tipoHabitacionComboBox.Items.AddRange(new object[] {
+            "Individual",
+            "Doble",
+            "Familiar"});
+            this.tipoHabitacionComboBox.Location = new System.Drawing.Point(156, 135);
+            this.tipoHabitacionComboBox.Name = "tipoHabitacionComboBox";
+            this.tipoHabitacionComboBox.Size = new System.Drawing.Size(121, 24);
+            this.tipoHabitacionComboBox.TabIndex = 7;
+            // 
+            // habitacionDataGridView1
+            // 
+            this.habitacionDataGridView1.AutoGenerateColumns = false;
+            this.habitacionDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.habitacionDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewCheckBoxColumn2});
+            this.habitacionDataGridView1.DataSource = this.habitacionBindingSource;
+            this.habitacionDataGridView1.Location = new System.Drawing.Point(380, 70);
+            this.habitacionDataGridView1.Name = "habitacionDataGridView1";
+            this.habitacionDataGridView1.RowHeadersWidth = 51;
+            this.habitacionDataGridView1.RowTemplate.Height = 24;
+            this.habitacionDataGridView1.Size = new System.Drawing.Size(718, 369);
+            this.habitacionDataGridView1.TabIndex = 2;
             // 
             // btnEditar
             // 
@@ -251,6 +262,17 @@
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(48, 14);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(201, 40);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "VER HABITACIONES";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.DataPropertyName = "NumHabitacion";
@@ -287,21 +309,12 @@
             // 
             this.habitacionBindingSource.DataSource = typeof(Proyecto_Hotel.Models.Habitacion);
             // 
-            // estadoHabitacionCheckBox
-            // 
-            this.estadoHabitacionCheckBox.DataBindings.Add(new System.Windows.Forms.Binding("CheckState", this.habitacionBindingSource, "EstadoHabitacion", true));
-            this.estadoHabitacionCheckBox.Location = new System.Drawing.Point(165, 96);
-            this.estadoHabitacionCheckBox.Name = "estadoHabitacionCheckBox";
-            this.estadoHabitacionCheckBox.Size = new System.Drawing.Size(104, 24);
-            this.estadoHabitacionCheckBox.TabIndex = 16;
-            this.estadoHabitacionCheckBox.Text = "Ocupado";
-            this.estadoHabitacionCheckBox.UseVisualStyleBackColor = true;
-            // 
             // FrmGestionarHabitacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1149, 491);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.habitacionDataGridView1);
             this.Controls.Add(this.btnEliminar);
@@ -343,5 +356,6 @@
         private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.CheckBox estadoHabitacionCheckBox;
+        private System.Windows.Forms.Button button1;
     }
 }

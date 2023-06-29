@@ -73,5 +73,11 @@ namespace Proyecto_Hotel.Vistas
             _isNew = false; //A la variable global lo volvemos false
             groupBoxHabitacion.Enabled = true; //Habilita al groupbox escribir los datos
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FrmFleteHabitacion frmFleteHabitacion = new FrmFleteHabitacion();
+            frmFleteHabitacion.Show();
+        }
     }
 }

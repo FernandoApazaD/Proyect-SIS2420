@@ -40,5 +40,18 @@ namespace Proyecto_Hotel.Vistas
             frmGestionarCliente.WindowState= FormWindowState.Maximized;
             frmGestionarCliente.Show();
         }
+
+        private void rEPORTESToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmReportes frmReporte = new FrmReportes();
+            frmReporte.MdiParent = this;       //Carga al formulario en la misma pantalla
+            frmReporte.WindowState = FormWindowState.Maximized;
+            frmReporte.Show();
+        }
+
+        private void sALIRToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

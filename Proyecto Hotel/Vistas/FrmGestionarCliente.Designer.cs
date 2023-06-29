@@ -34,17 +34,17 @@
             System.Windows.Forms.Label idClienteLabel;
             System.Windows.Forms.Label nombreClienteLabel;
             this.groupBoxCliente = new System.Windows.Forms.GroupBox();
-            this.clienteDataGridView = new System.Windows.Forms.DataGridView();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
+            this.idClienteLabel2 = new System.Windows.Forms.Label();
             this.apellidoClienteTextBox = new System.Windows.Forms.TextBox();
             this.ciClienteTextBox = new System.Windows.Forms.TextBox();
             this.nombreClienteTextBox = new System.Windows.Forms.TextBox();
-            this.idClienteLabel2 = new System.Windows.Forms.Label();
+            this.clienteDataGridView = new System.Windows.Forms.DataGridView();
             this.lblBuscar = new System.Windows.Forms.Label();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,6 +61,42 @@
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
+            // apellidoClienteLabel
+            // 
+            apellidoClienteLabel.AutoSize = true;
+            apellidoClienteLabel.Location = new System.Drawing.Point(16, 113);
+            apellidoClienteLabel.Name = "apellidoClienteLabel";
+            apellidoClienteLabel.Size = new System.Drawing.Size(121, 20);
+            apellidoClienteLabel.TabIndex = 0;
+            apellidoClienteLabel.Text = "Apellido Cliente:";
+            // 
+            // ciClienteLabel
+            // 
+            ciClienteLabel.AutoSize = true;
+            ciClienteLabel.Location = new System.Drawing.Point(16, 39);
+            ciClienteLabel.Name = "ciClienteLabel";
+            ciClienteLabel.Size = new System.Drawing.Size(78, 20);
+            ciClienteLabel.TabIndex = 2;
+            ciClienteLabel.Text = "Ci Cliente:";
+            // 
+            // idClienteLabel
+            // 
+            idClienteLabel.AutoSize = true;
+            idClienteLabel.Location = new System.Drawing.Point(16, 149);
+            idClienteLabel.Name = "idClienteLabel";
+            idClienteLabel.Size = new System.Drawing.Size(82, 20);
+            idClienteLabel.TabIndex = 4;
+            idClienteLabel.Text = "Id Cliente:";
+            // 
+            // nombreClienteLabel
+            // 
+            nombreClienteLabel.AutoSize = true;
+            nombreClienteLabel.Location = new System.Drawing.Point(16, 78);
+            nombreClienteLabel.Name = "nombreClienteLabel";
+            nombreClienteLabel.Size = new System.Drawing.Size(120, 20);
+            nombreClienteLabel.TabIndex = 6;
+            nombreClienteLabel.Text = "Nombre Cliente:";
+            // 
             // groupBoxCliente
             // 
             this.groupBoxCliente.Controls.Add(this.btnCancelar);
@@ -73,12 +109,68 @@
             this.groupBoxCliente.Controls.Add(idClienteLabel);
             this.groupBoxCliente.Controls.Add(nombreClienteLabel);
             this.groupBoxCliente.Controls.Add(this.nombreClienteTextBox);
+            this.groupBoxCliente.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxCliente.Location = new System.Drawing.Point(24, 68);
             this.groupBoxCliente.Name = "groupBoxCliente";
             this.groupBoxCliente.Size = new System.Drawing.Size(329, 297);
             this.groupBoxCliente.TabIndex = 0;
             this.groupBoxCliente.TabStop = false;
             this.groupBoxCliente.Text = "CLIENTE";
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.Location = new System.Drawing.Point(160, 204);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(109, 40);
+            this.btnCancelar.TabIndex = 13;
+            this.btnCancelar.Text = "CANCELAR";
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Location = new System.Drawing.Point(37, 204);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(99, 40);
+            this.btnGuardar.TabIndex = 12;
+            this.btnGuardar.Text = "GUARDAR";
+            this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // idClienteLabel2
+            // 
+            this.idClienteLabel2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "IdCliente", true));
+            this.idClienteLabel2.Location = new System.Drawing.Point(130, 149);
+            this.idClienteLabel2.Name = "idClienteLabel2";
+            this.idClienteLabel2.Size = new System.Drawing.Size(100, 23);
+            this.idClienteLabel2.TabIndex = 8;
+            this.idClienteLabel2.Text = "999";
+            // 
+            // apellidoClienteTextBox
+            // 
+            this.apellidoClienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "ApellidoCliente", true));
+            this.apellidoClienteTextBox.Location = new System.Drawing.Point(150, 113);
+            this.apellidoClienteTextBox.Name = "apellidoClienteTextBox";
+            this.apellidoClienteTextBox.Size = new System.Drawing.Size(136, 28);
+            this.apellidoClienteTextBox.TabIndex = 1;
+            // 
+            // ciClienteTextBox
+            // 
+            this.ciClienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "CiCliente", true));
+            this.ciClienteTextBox.Location = new System.Drawing.Point(150, 39);
+            this.ciClienteTextBox.Name = "ciClienteTextBox";
+            this.ciClienteTextBox.Size = new System.Drawing.Size(136, 28);
+            this.ciClienteTextBox.TabIndex = 3;
+            // 
+            // nombreClienteTextBox
+            // 
+            this.nombreClienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "NombreCliente", true));
+            this.nombreClienteTextBox.Location = new System.Drawing.Point(150, 75);
+            this.nombreClienteTextBox.Name = "nombreClienteTextBox";
+            this.nombreClienteTextBox.Size = new System.Drawing.Size(136, 28);
+            this.nombreClienteTextBox.TabIndex = 7;
             // 
             // clienteDataGridView
             // 
@@ -99,75 +191,6 @@
             this.clienteDataGridView.RowTemplate.Height = 24;
             this.clienteDataGridView.Size = new System.Drawing.Size(607, 341);
             this.clienteDataGridView.TabIndex = 2;
-            // 
-            // apellidoClienteLabel
-            // 
-            apellidoClienteLabel.AutoSize = true;
-            apellidoClienteLabel.Location = new System.Drawing.Point(16, 113);
-            apellidoClienteLabel.Name = "apellidoClienteLabel";
-            apellidoClienteLabel.Size = new System.Drawing.Size(104, 16);
-            apellidoClienteLabel.TabIndex = 0;
-            apellidoClienteLabel.Text = "Apellido Cliente:";
-            // 
-            // apellidoClienteTextBox
-            // 
-            this.apellidoClienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "ApellidoCliente", true));
-            this.apellidoClienteTextBox.Location = new System.Drawing.Point(133, 113);
-            this.apellidoClienteTextBox.Name = "apellidoClienteTextBox";
-            this.apellidoClienteTextBox.Size = new System.Drawing.Size(136, 22);
-            this.apellidoClienteTextBox.TabIndex = 1;
-            // 
-            // ciClienteLabel
-            // 
-            ciClienteLabel.AutoSize = true;
-            ciClienteLabel.Location = new System.Drawing.Point(16, 39);
-            ciClienteLabel.Name = "ciClienteLabel";
-            ciClienteLabel.Size = new System.Drawing.Size(66, 16);
-            ciClienteLabel.TabIndex = 2;
-            ciClienteLabel.Text = "Ci Cliente:";
-            // 
-            // ciClienteTextBox
-            // 
-            this.ciClienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "CiCliente", true));
-            this.ciClienteTextBox.Location = new System.Drawing.Point(133, 39);
-            this.ciClienteTextBox.Name = "ciClienteTextBox";
-            this.ciClienteTextBox.Size = new System.Drawing.Size(136, 22);
-            this.ciClienteTextBox.TabIndex = 3;
-            // 
-            // idClienteLabel
-            // 
-            idClienteLabel.AutoSize = true;
-            idClienteLabel.Location = new System.Drawing.Point(16, 149);
-            idClienteLabel.Name = "idClienteLabel";
-            idClienteLabel.Size = new System.Drawing.Size(65, 16);
-            idClienteLabel.TabIndex = 4;
-            idClienteLabel.Text = "Id Cliente:";
-            // 
-            // nombreClienteLabel
-            // 
-            nombreClienteLabel.AutoSize = true;
-            nombreClienteLabel.Location = new System.Drawing.Point(16, 78);
-            nombreClienteLabel.Name = "nombreClienteLabel";
-            nombreClienteLabel.Size = new System.Drawing.Size(103, 16);
-            nombreClienteLabel.TabIndex = 6;
-            nombreClienteLabel.Text = "Nombre Cliente:";
-            // 
-            // nombreClienteTextBox
-            // 
-            this.nombreClienteTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "NombreCliente", true));
-            this.nombreClienteTextBox.Location = new System.Drawing.Point(133, 75);
-            this.nombreClienteTextBox.Name = "nombreClienteTextBox";
-            this.nombreClienteTextBox.Size = new System.Drawing.Size(136, 22);
-            this.nombreClienteTextBox.TabIndex = 7;
-            // 
-            // idClienteLabel2
-            // 
-            this.idClienteLabel2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.clienteBindingSource, "IdCliente", true));
-            this.idClienteLabel2.Location = new System.Drawing.Point(130, 149);
-            this.idClienteLabel2.Name = "idClienteLabel2";
-            this.idClienteLabel2.Size = new System.Drawing.Size(100, 23);
-            this.idClienteLabel2.TabIndex = 8;
-            this.idClienteLabel2.Text = "999";
             // 
             // lblBuscar
             // 
@@ -195,9 +218,10 @@
             // 
             this.txtBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtBuscar.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBuscar.Location = new System.Drawing.Point(259, 26);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(297, 22);
+            this.txtBuscar.Size = new System.Drawing.Size(297, 28);
             this.txtBuscar.TabIndex = 17;
             // 
             // btnBuscar
@@ -211,28 +235,6 @@
             this.btnBuscar.Text = "BUSCAR";
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(160, 204);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(109, 40);
-            this.btnCancelar.TabIndex = 13;
-            this.btnCancelar.Text = "CANCELAR";
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardar.Location = new System.Drawing.Point(37, 204);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(99, 40);
-            this.btnGuardar.TabIndex = 12;
-            this.btnGuardar.Text = "GUARDAR";
-            this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnEditar
             // 
@@ -308,7 +310,7 @@
             this.Controls.Add(this.clienteDataGridView);
             this.Controls.Add(this.groupBoxCliente);
             this.Name = "FrmGestionarCliente";
-            this.Text = "FrmGestionarCliente";
+            this.Text = "Gestionar Cliente";
             this.Load += new System.EventHandler(this.FrmGestionarCliente_Load);
             this.groupBoxCliente.ResumeLayout(false);
             this.groupBoxCliente.PerformLayout();
